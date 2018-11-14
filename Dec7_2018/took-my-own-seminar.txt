@@ -1,0 +1,20 @@
+Okay so LSTM is what I'm doing inside an RNN cell
+
+Meaning say my RNN is trained on a categorical (one-hot?) make, one-hot model, year, odometer, zip
+
+I use LSTM once the RNN is already built
+
+Predict price of a car at this ODO based on same car at this ODO
+
+Predict price of a car at this ODO-Year based on same car at this ODO-Year weighted average
+
+A ford explorer's age is a weighted average of year and mileage
+
+Time series: ford explorer's average price as it ages
+
+LSTM Data Prep:
+    1. Transform the time series into a supervised learning problem.
+
+    2. Transform the sime series data so that it is stationary.
+
+    3. Transform the observations to have a specific scale.
