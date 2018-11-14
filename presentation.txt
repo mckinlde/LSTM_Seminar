@@ -1,0 +1,14 @@
+Sources:
+
+http://colah.github.io/posts/2015-08-Understanding-LSTMs/
+
+Slides:
+
+https://docs.google.com/presentation/d/11TXk9aSy5ig_GQxnBcd71zvRMFuJ0fx2Q9d_vKrt5xI/edit#slide=id.g3aa1a4beb0_0_0
+
+Files:
+
+Seminar.py (unfortunately named)
+setup.py - Good opening example code
+sales-of-shampoo-over-a-three-ye.csv - new naming convention?
+international-airline-passengers.csv - new naming convention.
