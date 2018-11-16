@@ -78,7 +78,35 @@ def forecast_lstm(model, batch_size, X):
     return yhat[0,0]
 
 # load dataset
-series = read_csv('/Users/douglasmckinley/PycharmProjects/LSTM_Seminar/sales-of-shampoo-over-a-three-ye.csv', header=0, parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
+# ToDo: ValueError: time data '19043051' does not match format '%Y-%m'
+
+# # Their data:
+# "Month","Sales"
+# "1-01",266.0
+# "1-02",145.9
+#
+# Their output:
+# Month
+# 1901-01-01    266.0
+# 1901-02-01    145.9
+# 1901-03-01    183.1
+# 1901-04-01    119.3
+# 1901-05-01    180.3
+# Name: Sales, dtype: float64
+
+series = read_csv(
+    '/Users/douglasmckinley/PycharmProjects/LSTM_Seminar/sales-of-shampoo-over-a-three-ye.csv',
+    #'/Users/douglasmckinley/PycharmProjects/LSTM_Seminar/Dec7_2018/ford_explorer_Price-Year-Miles',
+    header=0,
+    parse_dates=[0],
+    index_col=0,
+    squeeze=True,
+    date_parser=parser
+    )
+
+# ToDo: Tester
+print(series.head())
+
 
 # transform data to be stationary
 raw_values = series.values
